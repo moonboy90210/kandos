@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styler.css">
+  <script src="https://kit.fontawesome.com/0f977cd8f2.js" crossorigin="anonymous"></script>
+  <title>KANDOS</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- place navbar here -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">KANDOS</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">MENU</button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="#welcome" aria-current="page">HOME<span
+                  class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" aria-current="page">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu" aria-current="page">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" aria-current="page">CONTACT</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="site-cover pb-5" id="welcome" style="background-image: url(/img/newBG.jpg); height: 100vh; min-width: 360px;">
+    <div class="container">
+      <div class=" justify-content-center">
+        <div class=" text-center ">
+
+          <h1 class="site-heading site-animate mb-3 fadeInUp site-animated">Welcome To Kandos</h1>
+          <h5 class="site-subheading mb-5">Come eat and relax with our delicious, healthy and ambient environment</h5>
+
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Reservation
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <img src="/img/modal pree.jpeg" class="p-2" alt="Reserve a Table" srcset="" min-height="150px"
+                  min-width="370px">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-1" id="staticBackdropLabel">Reserve A Table</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6 g-4">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col-md-6 g-4">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                    <div class="col-md-12 g-4">
+                      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-sm-6 col-md-6 g-4">
+                      <input type="number" class="form-control" id="inputPhone" placeholder="Phone No.">
+                    </div>
+                    <div class="col-sm-6 col-md-6 g-4">
+                      <select id="inputPeople" class="form-select">
+                        <option selected>How Many People?</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5+ People</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 g-4">
+                      <input type="date" class="form-control" placeholder="Date" aria-label="Date">
+                    </div>
+                    <div class="col-sm-6 col-md-6 g-4">
+                      <input type="time" class="form-control" placeholder="Time" aria-label="Time">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label"></label>
+                      <textarea class="form-control" name="" id="" rows="3" placeholder="Leave a Message"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Reserve Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="about" class="pt-5 pb-5">
+    <main class="container ">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <p>OUR STORY</p>
+          <h2>Welcome</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <button type="button" class="btn btn-outline-dark btn-lg">
+            Learn More About Us
+          </button>
+
+        </div>
+        <div class="col-lg-4 align-content-end">
+          <img src="/img/chef.png" alt="chef" srcset="" style="max-width: 365px;" class="img1 ">
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="pt-5 pb-5">
+    <main>
+      <div class="container">
+        <div class="justify-content-center">
+
+          <h1 class="display-4 text-center">Delicious Menu</h1>
+          <h5 class="mb-4 text-center">Come eat and relax with our delicious, healthy and ambient environment.</h5>
+
+          <ul class="nav nav-tabs mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active  text-dark" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                aria-selected="true">BREAKFAST</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link  text-dark" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false">LUNCH</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link  text-dark" id="pills-contact-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                aria-selected="false">DINNER</button>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+
+            <!-- BREAKFAST PILLS -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
+              <div class="card mb-1 border-0" style="max-width: 1800px;">
+                <div class="row g-2">
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/chick.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 ol-sm-5 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Fried Potato w/ Garlic</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#2,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Special Shrimp & Corn</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#4,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/chicken.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Sunny Side Up & Beverage</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/chick.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Fried Potato w/ Garlic</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#2,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Noodles w/ Italian Sauce</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#4,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/chicken.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Salted Fried Chicken</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#4,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- LUNCH PILLS -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+              tabindex="0">
+
+              <div class="card mb-1 border-0" style="max-width: 1800px;">
+                <div class="row g-0">
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Fried Rice & Turkey</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#2,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Smokey Jollof Rice & Grilled Fish</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#4,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Salted Fried Chicken</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Salted Salmon and Salad</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Alfredo Pasta & Turkey</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Salted Fried Turkey</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DINNER PILLS -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+              tabindex="0">
+              <div class="card mb-1 border-0" style="max-width: 1800px;">
+                <div class="row g-0">
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Spaghetti Bolognese & Turkey</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms--and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#2,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Amala & Gbegiri w/ Round About</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms--and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#4,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Ofada Rice and Special Sauce</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms--and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Rice & Turkey</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms--and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Spaghettini Pasta & Meatballs</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms--and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 col-sm-3 col-lg-1">
+                    <img src="/img/menu.png" class="img-fluid mt-3" alt="Card title"
+                      style="width: 100px; border-radius: 100px;" />
+                  </div>
+                  <div class="col-9 col-sm-9 col-lg-5">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Amala & Egusi</h5>
+                      <p class="card-text">
+                        This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+                        If you are a mushroom lover, then this Italian sauce is for you.
+                        It features a variety of mushrooms and you can add or take away as many kinds as you
+                        like.
+                      </p>
+                      <p class="card-text">
+                      <h6 class="fs-5 text-warning">#1,999.99</h6>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <section id="news">
+    <div class="container pt-5 p-3">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="mb-5 text-center">
+            <h1>News</h1>
+            <h6> This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+              If you are a mushroom lover, then this Italian sauce is for you.
+              It features a variety of mushrooms and you can add or take away as many kinds as you
+              like.</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5">
+          <img src="/img/menu.png" class="mb-3 img-fluid" alt="Card title" style="width: 360px;" />
+
+
+          <div class="card-body text-center">
+            <h5 class="card-title"><b>We Have Delicious Food</b></h5>
+            <p class="card-text">
+              This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+              If you are a mushroom lover, then this Italian sauce is for you.
+              It features a variety of mushrooms and you can add or take away as many kinds as you
+              like.
+            </p>
+            <p class="card-text">
+              <a href="#" class="btn btn-warning btn-sm">Read More</a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5">
+          <img src="/img/menu.png" class="mb-3 img-fluid" alt="Card title" style="width: 360px;" />
+
+
+          <div class="card-body text-center">
+            <h5 class="card-title"><b>Special Celebrations</b></h5>
+            <p class="card-text">
+              This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+              If you are a mushroom lover, then this Italian sauce is for you.
+              It features a variety of mushrooms and you can add or take away as many kinds as you
+              like.
+            </p>
+            <p class="card-text">
+              <a href="#" class="btn btn-warning btn-sm">Read More</a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 ">
+          <img src="/img/menu.png" class="mb-3 img-fluid" alt="Card title" style="width: 360px;" />
+
+
+          <div class="card-body text-center">
+            <h5 class="card-title"><b>Chef Special Menu</b></h5>
+            <p class="card-text">
+              This is a creamy Italian mushroom sauce for pasta, chicken or beef fillets.
+              If you are a mushroom lover, then this Italian sauce is for you.
+              It features a variety of mushrooms and you can add or take away as many kinds as you
+              like.
+            </p>
+            <p class="card-text">
+              <a href="#" class="btn btn-warning btn-sm">Read More</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pb-5">
+    <div class="container p-3 pt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="display-4">Get In Touch</h2>
+          <p class="lead">Like what you see? You can reach out to us and let us know your preferences</p>
+        </div>
+        <div class="col-md-7 mb-5">
+          <form action="post">
+
+            <div class="form-group mb-3">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea name="message" class="form-control mb-3" id="exampleFormControlTextarea1" rows="6"
+                placeholder="Leave a message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-warning btn-lg text-light" value="Send Message">
+            </div>
+          </form> 
+        </div>
+        <div class="col-md-4">
+          <p>
+            <img src="/img/chef.png" alt="A chef" srcset="/img/chef.png" class="cheft" style="max-width: 360px;">
+          </p>
+          <p class="text-dark">
+            <i class="fa-solid fa-location-dot"></i>
+            121 Street, Off eronsi round about, Festac
+            3000 Nigeria.
+          </p>
+          <p class="text-dark">
+            <i class="fa-solid fa-phone"></i>
+            +234 123456789
+          </p>
+          <p class="text-dark">
+            <i class="fa-solid fa-phone"></i>
+            +234 123456789
+          </p>
+          <p class="text-dark"><i class="fa-solid fa-envelope"></i> info@kandosrestaurant.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer id="footer" >
+    <!-- place footer here -->
+    <div class="container p-3 pt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 mb-3">
+          <h5>ABOUT US</h5>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, similique, delectus blanditiis odit
+            expedita amet.
+            Sed labore ipsum vel dolore, quis, culpa et magni autem sequi facere eos tenetur, ex?</P>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-3">
+          <h5>THE RESTAURANT</h5>
+          <p>About Us</p>
+          <p>Events</p>
+          <p>Contact</p>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-3">
+          <h5>USEFUL LINKS</h5>
+          <p>Foods</p>
+          <p>Drinks</p>
+          <p>Breakfast</p>
+          <p>Brunch</p>
+          <p>Dinner</p>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-5">
+          <h5>USEFUL LINKS</h5>
+          <p>Foods</p>
+          <p>Drinks</p>
+          <p>Breakfast</p>
+          <p>Brunch</p>
+          <p>Dinner</p>
+
+        </div>
+        <div class="col-12 text-center mb-3">
+          <i class="fa-brands fa-x-twitter fa-xl px-1"></i>
+          <i class="fa-brands fa-facebook-f fa-xl px-1"></i>
+          <i class="fa-brands fa-instagram fa-xl px-1"></i>
+
+        </div>
+        <div class="col-12 text-center pb-5">
+          <span> © Kandos
+            <script>document.write(new Date().getFullYear());</script> All rights reserved.
+          </span>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
