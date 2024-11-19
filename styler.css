@@ -61,7 +61,7 @@ body {
 form {
 	color: dimgrey;
 }
-#about button, p {
+#about a, p {
 	color: grey;
 }
 #menu {
@@ -94,6 +94,16 @@ color: grey;
 }
 footer h5 {
 	color: #fff;
+}
+.footer-gallery {
+	display: block;
+    position: relative;
+    width: calc((100% - 50px) / 3);
+	height: 80px;
+	size: cover;
+	position: center center;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 /* Tablet and larger screens */
 
