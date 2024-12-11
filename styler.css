@@ -85,9 +85,33 @@ color: grey;
 	color: black;
 
 }
-#contact i,{
+#contact i{
 	color: black;
 }
+#contact{
+	/* border: 5px solid red; */
+	/* background-color: lightblue; */
+	width: auto;
+	height: px;
+	overflow: auto;
+  }
+  
+  #contact:hover {
+	background-color: rgb(255, 126, 79);
+	width: auto;
+	height: auto;
+	/* padding: 100px; */
+	
+
+  }
+  #contact .tt {
+	color: orangered;
+  }
+  #contact .tt:hover {
+	background-color: #c24f4f;
+	color: red;
+	
+  }
 #footer {
 	background-color: rgb(29, 30, 31);
 	color: gray
@@ -114,7 +138,22 @@ footer h5 {
 		flex-direction: row;
 		justify-content: center;
 	}
+	.cheft {
+		padding-top: 25px;
+	}
 }
+@media screen and (min-width: 768px) {
+   #welcome h1	{padding-top: 120px;
+} 
+
+@media screen and (min-width: 1024px) {
+	
+ } 
+
+ @media screen and (min-width: 1280px) {
+	
+ } 
+ 
 
 @media screen and (max-width: 768px) {
 	.site-cover .btn {
