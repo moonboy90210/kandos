@@ -37,13 +37,18 @@ body {
 }
 
 .site-heading {
+  /* font-family: 'Roboto Slab', serif; */
   color: white;
   padding-top: 250px;
+  font-weight: 300;
+  font-size: 80px;
 }
 
 .site-subheading {
+  /* text-transform: capitalize; */
   color: #fff;
   font-weight: 200;
+  font-size: 25px;
   font-family: "Raleway", sans-serif;
 }
 
