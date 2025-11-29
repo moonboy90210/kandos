@@ -36,7 +36,7 @@
             <li class="nav-item"><a class="nav-link text-light" href="#menu">MENU</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="#reservations">CONTACT US</a></li>
             <li class="nav-item"><a class="btn btn-gold ms-3" href="#book" data-bs-toggle="modal"
-                data-bs-target="#reserveModal">Book Now</a></li>
+                data-bs-target="#reserveModal">BOOK NOW</a></li>
           </ul>
         </div>
       </div>
@@ -136,8 +136,8 @@
         <!-- Image Side -->
         <div class="col-md-6 text-center">
          <div class="about-img-wrapper">
-           <img src="/img/newchef.jpeg" alt="Head Chef at Kando’s" class="about-img img-fluid rounded shadow-lg">
-           <div class="image-overlay"></div>
+           <img src="/img/newBG.jpg" alt="Head Chef at Kando’s" class="about-img img-fluid rounded shadow-lg">
+           <!-- <div class="image-overlay"></div> -->
          </div>
         </div>
 
@@ -150,7 +150,7 @@
 
     <div class="text-center mb-5">
       <h2 class="section-tag text-gold">Signature Dishes</h2>
-      <p class="menu-sub text-light">Crafted with passion. Served with excellence.</p>
+      <p class="section-sub ">Crafted with passion. Served with excellence.</p>
       <div class="underline"></div>
     </div>
 
@@ -234,7 +234,7 @@
 
       <div class="text-center mb-5">
         <h2 class="menu-title">Our Menu</h2>
-        <p class="menu-sub">Select a category to explore our dishes.</p>
+        <p class="section-sub">Select a category to explore our dishes.</p>
         <div class="underline"></div>
       </div>
 
@@ -410,9 +410,11 @@
 
   <section id="reservation" class="reservation-section">
     <div class="container">
-      <h2 class="section-title">Reserve a Table</h2>
+     <div class="text-center">
+       <h2 class="menu-title">Reserve a Table</h2>
       <p class="section-sub">Book your dining experience with ease.</p>
       <div class="underline"></div>
+     </div>
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="reservation-box mt-4">
@@ -495,6 +497,67 @@
   <div id="toast" class="toast" hidden></div>
 
 
+<section id="reviews" class="reviews-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-tag text-gold">Customer Reviews</h2>
+      <p class="review-sub">What our guests are saying</p>
+      <div class="underline"></div>
+    </div>
+
+    <!-- Slider Wrapper -->
+    <div class="reviews-slider">
+
+      <!-- Review 1 -->
+      <div class="review-card glass-card">
+        <div class="review-header">
+          <img src="/img/user1.jpg" alt="Profile" class="review-avatar">
+          <div>
+            <h5 class="review-name">James Okoro</h5>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <p class="review-text">
+          “Absolutely outstanding experience. The ambiance is luxury defined, and the meals are cooked with precision and passion.”
+        </p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card glass-card">
+        <div class="review-header">
+          <img src="/img/user2.jpg" alt="Profile" class="review-avatar">
+          <div>
+            <h5 class="review-name">Amara Bello</h5>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <p class="review-text">
+          “Kandos gives fine dining a new meaning. From the presentation to the taste — every plate feels like art.”
+        </p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card glass-card">
+        <div class="review-header">
+          <img src="/img/user3.jpg" alt="Profile" class="review-avatar">
+          <div>
+            <h5 class="review-name">Daniel Ayodele</h5>
+            <div class="review-stars">★★★★☆</div>
+          </div>
+        </div>
+
+        <p class="review-text">
+          “Loved the signature dishes! The steak was juicy, the service excellent, and the environment breathtaking.”
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -504,8 +567,9 @@
 
       <!-- Title -->
       <div class="text-center mb-5">
-        <h2 class="fw-bold text-gold">Contact Us</h2>
+        <h2 class="menu-title">Contact Us</h2>
         <p class="section-sub">We’d love to hear from you. Reach out anytime.</p>
+        <div class="underline"></div>
       </div>
 
       <div class="row g-4">
@@ -559,82 +623,69 @@
 
 
 
+<footer class="footer-section">
+  <div class="container py-5">
 
+    <div class="row g-4">
 
+      <!-- Brand / About -->
+      <div class="col-md-4">
+        <h3 class="footer-brand">KANDOS</h3>
+        <p class="footer-text">
+          A fine dining experience crafted with passion.  
+          Taste luxury, elegance, and unforgettable flavors.
+        </p>
 
-
-  <footer id="footer">
-    <!-- place footer here -->
-    <div class="container p-3 pt-5">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 mb-3">
-          <h5>ABOUT US</h5>
-          <P>At Kando's, we believe every meal should be a celebration of flavors, freshness, and hospitality.
-            Our carefully crafted menu features special dishes prepared with the finest ingredients and a touch of love.
-          </P>
-          <div>
-            <h5>OPENING HOURS</h5>
-            <P>09:00 AM – 11:00 PM</P>
-            <P>Every Day</P>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 mb-3">
-          <h5>THE RESTAURANT</h5>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about" aria-current="page">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu" aria-current="page">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news" aria-current="page">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" aria-current="page">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-4 mb-3">
-          <h5>GALLERY</h5>
-          <div class=" row flex-w">
-            <img class="footer-gallery" src="/img/stksuya.JPG" height="80px"></img>
-            <img class="footer-gallery" src="/img/SpagPlant.JPG"></img>
-            <img class="footer-gallery" src="/img/JricePlant.JPG"></img>
-            <img class="footer-gallery" src="/img/spagFish.JPG"></img>
-            <img class="footer-gallery" src="/img/soup.JPG"></img>
-            <img class="footer-gallery" src="/img/out2.JPG"></img>
-            <img class="footer-gallery" src="/img/inside1.JPG"></img>
-            <img class="footer-gallery" src="/img/inside2.JPG"></img>
-            <img class="footer-gallery" src="/img/out.JPG"></img>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-3 mb-5">
-          <h5>USEFUL LINKS</h5>
-          <p>Foods</p>
-          <p>Drinks</p>
-          <p>Breakfast</p>
-          <p>Brunch</p>
-          <p>Dinner</p>
-
-        </div> -->
-        <div class="col-12 text-center mb-3">
-          <i class="fa-brands fa-x-twitter fa-xl px-1"></i>
-          <i class="fa-brands fa-facebook-f fa-xl px-1"></i>
-          <i class="fa-brands fa-instagram fa-xl px-1"></i>
-        </div>
-        <div class="col-12 text-center pb-5">
-          <span> © Kando's
-            <script>document.write(new Date().getFullYear());</script> All rights reserved.
-          </span>
+        <div class="social-links mt-3">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter "></i></a>
         </div>
       </div>
 
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-list">
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#signature">Signature Dishes</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
 
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h5 class="footer-title">Contact</h5>
+        <ul class="footer-list contact-list">
+          <li><i class="fa-solid fa-location-dot text-gold me-2"></i> 15 Adeola Odeku, Victoria Island, Lagos</li>
+          <li><i class="fa-solid fa-phone text-gold me-2"></i> +234 901 645 2130</li>
+          <li><i class="fa-solid fa-envelope text-gold me-2"></i> info@kandosrestaurant.com</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h5 class="footer-title">Stay Updated</h5>
+        <form class="newsletter-form">
+          <input type="email" class="form-control footer-input" placeholder="Email address">
+          <button class="btn btn-gold mt-2">Subscribe</button>
+        </form>
+      </div>
 
     </div>
-  </footer>
+
+    <hr class="footer-line">
+
+    <p class="copyright text-center">
+      © 2025 Kandos Restaurant — All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+   
   <!-- Bootstrap JavaScript Libraries -->
   <script>
     document.getElementById("contact").style.transition = "all 1s";
