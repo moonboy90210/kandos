@@ -244,10 +244,7 @@ p, a, li, button, input, textarea {
   font-family: 'Cormorant Garamond', serif;
 }
 
-.menu-sub {
-  color: #777;
-  font-size: 1.05rem;
-}
+
 
 .underline {
   width: 70px;
@@ -258,22 +255,25 @@ p, a, li, button, input, textarea {
 
 /* TAB BUTTONS */
 #menuTabs .nav-link {
-  margin: 0 6px;
-  padding: 10px 18px;
-  border-radius: 40px;
-  font-size: 0.95rem;
-  background: #f1f1f1;
-  color: #555;
+   color: #bbb;
+  border: 1px solid transparent;
+  margin: 0 5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: transparent;
+  transition: 0.3s;
 }
 
 #menuTabs .nav-link.active,
 #menuTabs .nav-link:hover {
-  background: #000;
-  color: #fff;
+  background: #d4af37;
+  color: #000;
 }
 
 /* MENU CARD */
 .menu-card {
+   /* background: rgba(255, 255, 255, 0.06); */
+  border: 1px solid rgba(212, 175, 55, 0.2);
  /* background:#141414; */
   border-radius: 18px;
   overflow: hidden;
@@ -300,7 +300,7 @@ p, a, li, button, input, textarea {
 }
 
 .menu-info {
-  padding: 16px 20px;
+  padding: 16px;
 }
 
 .menu-info h4 {
@@ -452,15 +452,11 @@ p, a, li, button, input, textarea {
 .reservation-section {
   padding: 60px 0;
 }
-.section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 5px;
-}
+
 .section-sub {
   text-align: center;
   color: #777;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .reservation-box {
@@ -496,7 +492,7 @@ form textarea:focus {
   border-color: var(--gold);
   box-shadow: none;
 }
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: #777 !important;
 }
 
@@ -593,4 +589,175 @@ input::placeholder {
 
 .contact-box:hover {
   border-color: var(--gold);
+}
+/*-------------- FOOTER SECTION ----------------------- */
+
+
+.footer-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d4a657;
+  letter-spacing: 2px;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: #d4a657;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color .3s ease, padding-left .3s ease;
+}
+
+.footer-list li a:hover {
+  color: #d4a657;
+  padding-left: 5px;
+}
+
+.social-links a {
+  font-size: 1.3rem;
+  margin-right: 12px;
+  color: #bbb;
+  transition: .3s ease;
+}
+
+.social-links a:hover {
+  color: #d4a657;
+  transform: translateY(-3px);
+}
+
+.footer-input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.footer-input::placeholder {
+  color: #ccc;
+}
+
+
+.footer-line {
+  border-color: rgba(255,255,255,0.2);
+  margin: 25px 0;
+}
+/* --------------------- */
+.reviews-section {
+  background: #0f0f0f;
+  color: #ddd;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-gold {
+  color: #d4a657;
+}
+
+.review-sub {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.reviews-slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  min-width: 320px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  scroll-snap-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform .4s ease, background .3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-avatar {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d4a657;
+}
+
+.review-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.review-stars {
+  color: #d4a657;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.review-text {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Shine overlay */
+.reviews-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  height: 100%;
+  width: 80%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.07) 50%,
+    transparent 100%
+  );
+  animation: shineMove 12s infinite linear;
+}
+
+@keyframes shineMove {
+  0% { left: -120%; }
+  100% { left: 120%; }
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    min-width: 270px;
+  }
 }
