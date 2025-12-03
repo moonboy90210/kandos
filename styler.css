@@ -2,7 +2,7 @@
 
 
 :root {
-  --gold: #d6ae29  ;
+  --gold: #d6ae29;
 }
 
 *,
@@ -12,10 +12,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #0e0e0e;
   color: #f2f2f2;
   font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -33,12 +35,13 @@ body {
 
 .kandos-nav .nav-link:hover,
 .kandos-nav .nav-link.active {
-  color: #CDAA7D !important; /* gold accent */
+  color: #CDAA7D !important;
+  /* gold accent */
 }
 
 /* Hero Section */
 .hero-header {
-  background: url('/img/newBG.jpg') center/cover no-repeat;
+  background: url('/img/hero2.jpg') center/cover no-repeat;
   height: 100vh;
   position: relative;
 }
@@ -49,26 +52,37 @@ body {
 
 /* Modal */
 .modal-content {
-  background:  #0e0e0e ;
+  background: #0e0e0e;
   border-radius: 12px;
   overflow: hidden;
 }
 
 
 /* Headings */
-h1, h2, h3, h4 .hero-title, .section-title, .navbar-brand {
-   font-family: 'Cormorant Garamond', serif;
-     color: var(--gold);
+h1,
+h2,
+h3,
+h4 .hero-title,
+.section-title,
+.navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--gold);
   letter-spacing: 1px;
 }
+
 .text-gold {
   color: var(--gold);
 }
 
 /* Clean Body & Buttons */
-p, a, li, button, input, textarea {
-    font-family: 'Inter', sans-serif;
-     color: #cccccc;
+p,
+a,
+li,
+button,
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  color: #cccccc;
 }
 
 /*-------------- ABOUT SECTION -----------------*/
@@ -77,7 +91,8 @@ p, a, li, button, input, textarea {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   letter-spacing: 3px;
-  color: #CDAA7D; /* refined gold accent */
+  color: #CDAA7D;
+  /* refined gold accent */
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -92,9 +107,9 @@ p, a, li, button, input, textarea {
 .about-text {
   font-size: 1.05rem;
   line-height: 1.8;
-  /* color: #444; */
+ /* text-align: center; */
   margin-bottom: 18px;
-  font-family: 'Lato', sans-serif; /* clean modern body font */
+  font-family: 'Lato', sans-serif;
 }
 
 /* Images */
@@ -109,9 +124,11 @@ p, a, li, button, input, textarea {
   height: auto;
   transition: transform 0.5s ease;
 }
+
 .about-img-wrapper:hover .about-img {
   transform: scale(1.05);
 }
+
 /* Overlay */
 .image-overlay {
   position: absolute;
@@ -120,9 +137,10 @@ p, a, li, button, input, textarea {
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7));
   pointer-events: none;
 }
+
 /*------------------- Signature Layout ------------------------- */
 /* Slider Structure */
 .signature-slider {
@@ -133,32 +151,36 @@ p, a, li, button, input, textarea {
 
 .signature-slide {
   display: none;
+  opacity: 0;
   animation: fadeSlide 1s ease;
 }
 
 .signature-slide.active {
   display: block;
+  opacity: 1;
 }
+
 /* Card Glass Effect */
 .glass-card {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
-
+  backdrop-filter: blur(10px);
 }
 
-.signature-img{
+.signature-img {
   position: relative;
 }
+
 .signature-img img {
   width: 100%;
   height: 520px;
   object-fit: cover;
-    transition: transform .4s ease;
+  display: block;
+  transition: transform .4s ease;
 }
+
 /* Shine Animation */
 .signature-img::before {
   content: "";
@@ -167,17 +189,16 @@ p, a, li, button, input, textarea {
   left: -150%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 100%);
   transform: skewX(-25deg);
   transition: 0.6s;
 }
+
 .signature-card:hover .signature-img::before {
-   /* animation: shine 1.2s forwards; */
+  /* animation: shine 1.2s forwards; */
   left: 150%;
 }
 
@@ -188,6 +209,7 @@ p, a, li, button, input, textarea {
   left: 20px;
   z-index: 3;
 }
+
 .dish-name {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.7rem;
@@ -206,21 +228,31 @@ p, a, li, button, input, textarea {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #CDAA7D; /* gold accent */
+  color: #CDAA7D;
+  /* gold accent */
 }
+
 /* Dark overlay */
 .image-overlay2 {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 2;
 }
 
 /* Fade Slide Animation */
 @keyframes fadeSlide {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
 /* Slider Buttons */
 .slider-btn {
   background: none;
@@ -237,14 +269,64 @@ p, a, li, button, input, textarea {
   background: #d4af37;
   color: #000;
 }
+
+/* ----------PAge Navigate -----------------*/
+
+.navigate-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigate-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform .4s ease;
+  display: block;
+}
+
+.navigate-img:hover img {
+  transform: scale(1.05);
+
+}
+
+.navigate-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.navigate-btn .btn {
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.navigate-btn .btn:hover {
+  /* letter-spacing: 1px; */
+  transform: translateY(-6px);
+  color: #d4af37;
+}
+
+.navigate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
 /* --------------------Menu Section------------------------*/
 .menu-title {
   font-size: 2.8rem;
   font-weight: 700;
   font-family: 'Cormorant Garamond', serif;
 }
-
-
 
 .underline {
   width: 70px;
@@ -255,7 +337,7 @@ p, a, li, button, input, textarea {
 
 /* TAB BUTTONS */
 #menuTabs .nav-link {
-   color: #bbb;
+  color: #bbb;
   border: 1px solid transparent;
   margin: 0 5px;
   padding: 8px 20px;
@@ -272,9 +354,9 @@ p, a, li, button, input, textarea {
 
 /* MENU CARD */
 .menu-card {
-   /* background: rgba(255, 255, 255, 0.06); */
+  /* background: rgba(255, 255, 255, 0.06); */
   border: 1px solid rgba(212, 175, 55, 0.2);
- /* background:#141414; */
+  /* background:#141414; */
   border-radius: 18px;
   overflow: hidden;
   /* box-shadow: 0 8px 25px rgba(0,0,0,0.08); */
@@ -284,7 +366,7 @@ p, a, li, button, input, textarea {
 
 .menu-card:hover {
   transform: translateY(-7px);
-  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
 }
 
 .menu-img {
@@ -306,6 +388,7 @@ p, a, li, button, input, textarea {
 .menu-info h4 {
   display: flex;
   justify-content: space-between;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -313,24 +396,42 @@ p, a, li, button, input, textarea {
 .menu-info p {
   color: #777;
   font-size: 0.95rem;
-  padding: 0 100px 0 0;
+  padding: 0 80px 0 0;
 
 }
 
 .underline2 {
-  width: 80px;
+  width: 500px;
   height: 3px;
-  background: #000;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(233, 196, 32));
   margin: 10px auto;
   border-radius: 5px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.underline1 {
+  width: 500px;
+  height: 3px;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(233, 196, 32));
+  margin: 10px auto;
+  border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .underline1,
+  .underline2 {
+    width: 340px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 .footer-gallery {
@@ -379,13 +480,13 @@ p, a, li, button, input, textarea {
   border-radius: 16px;
   overflow: hidden;
   transition: 0.4s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
 .cocktail-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
 }
 
 /* Image + Glass Effect */
@@ -414,7 +515,7 @@ p, a, li, button, input, textarea {
   left: -100%;
   width: 60%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0.15), rgba(255,255,255,0.01));
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.01));
   transform: skewX(-20deg);
   transition: 0.7s ease;
 }
@@ -448,6 +549,7 @@ p, a, li, button, input, textarea {
   color: #CDAA7D;
   font-size: 1.2rem;
 }
+
 /* ---------------------reservation page---------------- */
 .reservation-section {
   padding: 60px 0;
@@ -461,10 +563,10 @@ p, a, li, button, input, textarea {
 
 .reservation-box {
   /* background: #fff; */
-  background:#141414;
+  background: #141414;
   padding: 20px;
   border-radius: 14px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -476,9 +578,10 @@ p, a, li, button, input, textarea {
   display: block;
   margin-top: 3px;
 }
+
 /* Inputs + Forms */
-form input, 
-form select, 
+form input,
+form select,
 form textarea {
   background: #1d1d1d !important;
   border: 1px solid #333 !important;
@@ -492,7 +595,9 @@ form textarea:focus {
   border-color: var(--gold);
   box-shadow: none;
 }
-input::placeholder, textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   color: #777 !important;
 }
 
@@ -501,6 +606,7 @@ input::placeholder, textarea::placeholder {
   justify-content: space-between;
   gap: 10px;
 }
+
 .btn-gold {
   background: var(--gold);
   color: #000000;
@@ -508,11 +614,13 @@ input::placeholder, textarea::placeholder {
   border: none;
   transition: 0.3s ease;
 }
+
 .btn-gold:hover {
   background: transparent;
   color: var(--gold);
   border: 1px solid var(--gold);
 }
+
 /* Outline button */
 .btn-outline-gold {
   border: 1px solid var(--gold);
@@ -521,10 +629,12 @@ input::placeholder, textarea::placeholder {
   padding: 10px 25px;
   transition: 0.3s ease;
 }
+
 .btn-outline-gold:hover {
   background: var(--gold);
   color: #ffffff;
 }
+
 .btn {
   padding: 12px 18px;
   border-radius: 8px;
@@ -533,13 +643,16 @@ input::placeholder, textarea::placeholder {
   font-size: 0.95rem;
 }
 
-.status { margin-top: 10px; color: #777; }
+.status {
+  margin-top: 10px;
+  color: #777;
+}
 
 /* Modal */
- .modal2 {
+.modal2 {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,6 +666,7 @@ input::placeholder, textarea::placeholder {
   visibility: visible;
   opacity: 1;
 }
+
 .modal-panel {
   background: #fff;
   padding: 20px;
@@ -577,8 +691,9 @@ input::placeholder, textarea::placeholder {
   color: #fff;
   padding: 12px 18px;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 /* ---------------- Contact section ----------------------  */
 .contact-box {
   background: #141414;
@@ -590,6 +705,7 @@ input::placeholder, textarea::placeholder {
 .contact-box:hover {
   border-color: var(--gold);
 }
+
 /*-------------- FOOTER SECTION ----------------------- */
 
 
@@ -631,19 +747,19 @@ input::placeholder, textarea::placeholder {
   font-size: 1.3rem;
   margin-right: 12px;
   color: #bbb;
-  transition: .3s ease;
+  transition: transform .3s ease;
 }
 
 .social-links a:hover {
   color: #d4a657;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
-.footer-input {
+/* .footer-input {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.2);
   color: #fff;
-}
+} */
 
 .footer-input::placeholder {
   color: #ccc;
@@ -651,24 +767,16 @@ input::placeholder, textarea::placeholder {
 
 
 .footer-line {
-  border-color: rgba(255,255,255,0.2);
+  border-color: rgba(255, 255, 255, 0.2);
   margin: 25px 0;
 }
+
 /* --------------------- */
 .reviews-section {
   background: #0f0f0f;
   color: #ddd;
   overflow: hidden;
   position: relative;
-}
-
-.text-gold {
-  color: #d4a657;
-}
-
-.review-sub {
-  color: #ccc;
-  font-size: 1.1rem;
 }
 
 .reviews-slider {
@@ -686,18 +794,19 @@ input::placeholder, textarea::placeholder {
 
 .review-card {
   min-width: 320px;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 25px;
   scroll-snap-align: center;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform .4s ease, background .3s;
 }
 
 .review-card:hover {
   transform: translateY(-5px);
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .review-header {
@@ -742,22 +851,34 @@ input::placeholder, textarea::placeholder {
   left: -120%;
   height: 100%;
   width: 80%;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(255,255,255,0.07) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.07) 50%,
+      transparent 100%);
   animation: shineMove 12s infinite linear;
 }
 
 @keyframes shineMove {
-  0% { left: -120%; }
-  100% { left: 120%; }
+  0% {
+    left: -120%;
+  }
+
+  100% {
+    left: 120%;
+  }
 }
 
 @media (max-width: 768px) {
   .review-card {
     min-width: 270px;
   }
+}
+
+.border-bottom {
+  border-color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+
 }
