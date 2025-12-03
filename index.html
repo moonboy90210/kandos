@@ -19,7 +19,7 @@
 
   <header class="hero-header">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark kandos-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark kandos-nav fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <span class="fs-2">KANDOS</span>
@@ -31,10 +31,10 @@
 
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link text-light" href="#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#about">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#menu">MENU</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#reservations">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#welcome">HOME</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="about.html">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="menu.html">MENU</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="contact.html">CONTACT US</a></li>
             <li class="nav-item"><a class="btn btn-gold ms-3" href="#book" data-bs-toggle="modal"
                 data-bs-target="#reserveModal">BOOK NOW</a></li>
           </ul>
@@ -48,7 +48,7 @@
       <div class="container text-center">
         <h1 class="display-3 fw-bold"> Welcome to Kandos</h1>
         <p class="lead mb-4">Experience Fine Dining — Where taste meets luxury.</p>
-        <a href="#menu" class="btn-outline-gold py-3 text-decoration-none">DISCOVER MENU</a>
+        <a href="menu.html" class="btn-outline-gold py-3 text-decoration-none">DISCOVER MENU</a>
       </div>
     </section>
   </header>
@@ -59,11 +59,11 @@
     <div class="modal-dialog">
       <div class="modal-content text-light">
         <img src="/img/modal pree.jpeg" class="img-fluid rounded-top" alt="Reservation">
-        <div class="modal-header">
+        <div class="modal-header border-0">
           <h4 class="modal-title fw-bold text-gold" id="reserveLabel">Reserve A Table</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body border-bottom">
           <form class="row g-3">
             <div class="col-md-6">
               <input type="text" class="form-control" placeholder="First name">
@@ -97,7 +97,7 @@
           </form>
         </div>
 
-        <div class="modal-footer justify-content-center">
+        <div class="modal-footer justify-content-center border-bottom">
           <button class="btn btn-gold px-5">Reserve Now</button>
         </div>
 
@@ -111,230 +111,37 @@
     <div class="container">
       <div class="row align-items-center">
         <!-- Text Side -->
-        <div class="col-md-6 mb-4 pe-lg-5">
-          <span class="section-tag">OUR STORY</span>
-          <h2 class="section-title text-start mb-4">Welcome to Kando’s</h2>
-          <p class="about-text">
-            At Kando's, we believe every meal should be a celebration of rich flavors,
+        <div class="col-md-12 col-lg-6">
+          <div class="underline2"></div>
+          <h2 class="menu-title text-center my-4">KANDOS LAGOS</h2>
+          <div class="underline1"></div>
+
+          <p class="about-text pt-3">
+            At Kandos, we believe every meal should be a celebration of rich flavors,
             fresh ingredients, and warm hospitality. Our chefs craft each dish with passion,
             creativity, and a dedication to excellence.
           </p>
-
+          <p class="about-text">
+            Kandos Lagos is the ultimate destination for discerning diners seeking an extraordinary dining experience.
+          </p>
           <p class="about-text">
             Whether you’re enjoying an intimate dinner or sharing laughter with friends,
             we’re here to make every moment unforgettable. Thank you for choosing us —
             we’re truly delighted to serve you.
           </p>
-          
 
-          <a href="#menu" class="btn btn-gold mt-3 px-4 py-2">
+
+          <a href="#menu" class="btn btn-gold m-auto text-center mt-3 px-4 py-2">
             Discover Menu →
           </a>
 
         </div>
 
         <!-- Image Side -->
-        <div class="col-md-6 text-center">
-         <div class="about-img-wrapper">
-           <img src="/img/newBG.jpg" alt="Head Chef at Kando’s" class="about-img img-fluid rounded shadow-lg">
-           <!-- <div class="image-overlay"></div> -->
-         </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  
-<section id="signature" class="signature-section py-5">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-tag text-gold">Signature Dishes</h2>
-      <p class="section-sub ">Crafted with passion. Served with excellence.</p>
-      <div class="underline"></div>
-    </div>
-
-    <!-- Slider Wrapper -->
-    <div class="signature-slider">
-
-      <!-- Slide 1 -->
-      <div class="signature-slide active">
-        <div class="signature-card glass-card">
-
-          <div class="signature-img">
-            <img src="/img/turke.jpg" alt="Grilled Herb Chicken">
-
-            <!-- Text Overlay -->
-            <div class="signature-content">
-              <h4 class="dish-name text-gold">Grilled Herb Chicken</h4>
-              <p class="dish-desc text-light">Served with sautéed vegetables and creamy garlic sauce.</p>
-              <div class="dish-price text-gold">₦8,500</div>
-            </div>
-
-            <!-- Overlay Layer -->
-            <div class="image-overlay2"></div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="signature-slide">
-        <div class="signature-card glass-card">
-
-          <div class="signature-img">
-            <img src="/img/chickchips.jpg" alt="Smoked Beef Steak">
-
-            <div class="signature-content">
-              <h4 class="dish-name text-gold">Smoked Beef Steak</h4>
-              <p class="dish-desc text-light">Aged beef grilled with rosemary butter.</p>
-              <div class="dish-price text-gold">₦12,000</div>
-            </div>
-
-            <div class="image-overlay2"></div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="signature-slide">
-        <div class="signature-card glass-card">
-
-          <div class="signature-img">
-            <img src="/img/SpagPlant.JPG" alt="Creamy Alfredo Pasta">
-
-            <div class="signature-content">
-              <h4 class="dish-name text-gold">Creamy Alfredo Pasta</h4>
-              <p class="dish-desc text-light">Fresh pasta in parmesan cream sauce.</p>
-              <div class="dish-price text-gold">₦7,000</div>
-            </div>
-
-            <div class="image-overlay2"></div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Slider Controls -->
-    <div class="slider-controls text-center mt-4">
-      <button class="slider-btn prev">❮</button>
-      <button class="slider-btn next">❯</button>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <section id="menu" class="py-5">
-    <div class="container">
-
-      <div class="text-center mb-5">
-        <h2 class="menu-title">Our Menu</h2>
-        <p class="section-sub">Select a category to explore our dishes.</p>
-        <div class="underline"></div>
-      </div>
-
-      <!-- TABS -->
-      <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs">
-        <li class="nav-item">
-          <button class="nav-link active" data-filter="all">All</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-filter="starter">Starters</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-filter="main">Main Course</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-filter="drink">Drinks</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-filter="cocktail">Cocktails</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-filter="dessert">Desserts</button>
-        </li>
-      </ul>
-
-      <!-- MENU GRID -->
-      <div class="row g-4 menu-grid">
-
-        <!-- STARTER -->
-        <div class="col-md-6 col-lg-4 menu-item starter">
-          <div class="menu-card">
-            <img src="/img/bplantain.jpg" class="menu-img img-fluid">
-            <div class="menu-info">
-              <h4>Grilled Chicken Skewers <span class="text-gold">₦19,500</span></h4>
-              <p>Tender marinated chicken grilled to perfection.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 menu-item starter">
-          <div class="menu-card">
-            <img src="/img/bleaf.jpg" class="menu-img img-fluid">
-            <div class="menu-info">
-              <h4>Signature Beef Suya <span class="text-gold">₦16,500</span></h4>
-              <p>Rich spicy beef with Kandos signature seasoning.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- MAIN -->
-        <div class="col-md-6 col-lg-4 menu-item main">
-          <div class="menu-card">
-            <img src="/img/banga.jpg" class="menu-img img-fluid">
-            <div class="menu-info">
-              <h4>Kandos Fried Rice <span class="text-gold">₦18,000</span></h4>
-              <p>Loaded with prawns, vegetables & special spices.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 menu-item main">
-          <div class="menu-card">
-            <img src="/img/catsou.jpg" class="menu-img">
-            <div class="menu-info">
-              <h4>Butter Grilled Salmon <span class="text-gold">₦12,000</span></h4>
-              <p>Served with lemon butter and mashed potatoes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- DRINKS -->
-        <div class="col-md-6 col-lg-4 menu-item drink">
-          <div class="menu-card">
-            <img src="/img/efosus.jpg" class="menu-img">
-            <div class="menu-info">
-              <h4>Classic Mojito <span class="text-gold">₦20,500</span></h4>
-              <p>Fresh mint, lime & sparkling soda.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- COCKTAILS -->
-        <div class="col-md-6 col-lg-4 menu-item cocktail">
-          <div class="menu-card">
-            <img src="/img/gsou.jpg" class="menu-img">
-            <div class="menu-info">
-              <h4>Passion Royale <span class="text-gold">₦10,900</span></h4>
-              <p>Passion fruit, prosecco, citrus blend.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- DESSERTS -->
-        <div class="col-md-6 col-lg-4 menu-item dessert">
-          <div class="menu-card">
-            <img src="/img/gmeat.jpg" class="menu-img">
-            <div class="menu-info">
-              <h4>Chocolate Lava Cake <span class="text-gold">₦13,750</span></h4>
-              <p>Warm cake with a molten chocolate center.</p>
-            </div>
+        <div class="col-md-12 col-lg-6 text-center pt-4">
+          <div class="about-img-wrapper">
+            <img src="/img/newBG.jpg" alt="Head Chef at Kando’s" class="about-img img-fluid rounded shadow-lg">
+            <!-- <div class="image-overlay"></div> -->
           </div>
         </div>
 
@@ -342,353 +149,64 @@
     </div>
   </section>
 
-  <section id="cocktails" class="cocktail-section py-5">
-    <div class="container">
 
-      <!-- Header -->
-      <div class="text-center mb-5">
-        <span class="cocktail-tag">SIGNATURE COCKTAILS</span>
-        <h2 class="cocktail-title">Kando’s Mixology</h2>
-        <p class="cocktail-sub">Crafted with passion, served with flair.</p>
+
+  <section id="navigate">
+    <div class="container mx-">
+      <div class="row justify-content-center align-items-center py-3">
+        <div class="col-md-9 col-lg-6 navigate-img p-0">
+          <img src="/img/special2.jpg" alt="Good meal" class="img-fluid">
+          <div class="image-overlay2"></div>
+          <div class="navigate-btn">
+            <a href="menu.html" class="btn fs-2 text-uppercase">
+              Menus
+            </a>
+          </div>
+        </div>
       </div>
+      <div class="row justify-content-center align-items-center py-3">
+        <div class="col-md-9 col-lg-6 navigate-img p-0">
+          <img src="/img/cocktails.jpeg" alt="Good meal" class="img-fluid">
+          <div class="navigate-overlay"></div>
 
-      <div class="row g-4">
-
-        <!-- Cocktail Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="cocktail-card">
-            <div class="cocktail-img">
-              <img src="/img/cocktail-blue.jpg" alt="Cocktail">
-              <div class="glass-overlay"></div>
-            </div>
-
-            <div class="cocktail-info">
-              <h4>Blue Velvet</h4>
-              <p>Vodka • Blue Curaçao • Lemon zest</p>
-              <span class="price">₦6,500</span>
-            </div>
+          <div class="navigate-btn">
+            <a href="cocktail.html" class="btn fs-2 text-uppercase">
+              Cocktails
+            </a>
           </div>
         </div>
-
-        <!-- Cocktail Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="cocktail-card">
-            <div class="cocktail-img">
-              <img src="/img/cocktail-red.jpg" alt="Cocktail">
-              <div class="glass-overlay"></div>
-            </div>
-
-            <div class="cocktail-info">
-              <h4>Crimson Sunset</h4>
-              <p>Rum • Strawberry • Citrus blend</p>
-              <span class="price">₦7,000</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cocktail Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="cocktail-card">
-            <div class="cocktail-img">
-              <img src="/img/cocktail-gold.jpg" alt="Cocktail">
-              <div class="glass-overlay"></div>
-            </div>
-
-            <div class="cocktail-info">
-              <h4>Golden Mirage</h4>
-              <p>Whiskey • Honey • Orange bitters</p>
-              <span class="price">₦8,500</span>
-            </div>
-          </div>
-        </div>
-
       </div>
+      <div class="row justify-content-center align-items-center py-3">
+        <div class="col-md-9 col-lg-6 navigate-img p-0">
+          <img src="/img/hero6.jpg" alt="Outdoor Setting" class="img-fluid">
+          <div class="navigate-overlay"></div>
 
-    </div>
-  </section>
+          <div class="navigate-btn">
+            <a href="reservation.html" class="btn fs-2 px-0">
+              RESERVATIONS
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center py-3">
+        <div class="col-md-9 col-lg-6 navigate-img p-0">
+          <img src="/img/hero7.jpg" alt="Good meal" class="img-fluid">
+          <div class="navigate-overlay"></div>
 
-
-  <section id="reservation" class="reservation-section">
-    <div class="container">
-     <div class="text-center">
-       <h2 class="menu-title">Reserve a Table</h2>
-      <p class="section-sub">Book your dining experience with ease.</p>
-      <div class="underline"></div>
-     </div>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="reservation-box mt-4">
-            <form id="reserveForm" novalidate>
-              <div class="row">
-                <div class="col-md-12 mt-2 field">
-                  <label class="form-label">Full Name</label>
-                  <input type="text" class="form-control" name="fName" placeholder="John Doe" required>
-                  <small class="error"></small>
-                </div>
-
-                <div class="col-md-12 mt-2 field">
-                  <label class="form-label">Email Address</label>
-                  <input type="email" class="form-control" name="email" placeholder="example@email.com" required>
-                  <small class="error"></small>
-                </div>
-                <div class="col-md-6 mt-2 field">
-                  <label class="form-label">Phone Number</label>
-                  <input type="tel" name="phone" class="form-control" placeholder="+234 000 000">
-                  <small class="error"></small>
-                </div>
-                <div class="col-md-6 mt-2 field">
-                  <label class="form-label">Number of Guests</label>
-                  <select class="form-select" name="guests" title="select" required>
-                    <option>1 Person</option>
-                    <option>2 People</option>
-                    <option>3 People</option>
-                    <option>4 People</option>
-                    <option>5 People</option>
-                    <option>6+ People</option>
-                  </select>
-                </div>
-                <div class="col-md-6 mt-2 field">
-                  <label class="form-label">Date</label>
-                  <input required type="date" name="date" id="resDate" class="form-control">
-                  <small class="error"></small>
-                </div>
-                <div class="col-md-6 mt-2 field">
-                  <label class="form-label">Time</label>
-                  <input required type="time" name="time" class="form-control">
-                  <small class="error"></small>
-                </div>
-
-                <div class="my-2 field">
-                  <label class="form-label">Special Request(optional)</label>
-                  <textarea class="form-control" name="notes" rows="3"
-                    placeholder="Birthday, allergies, seating preference…"></textarea>
-                </div>
-
-                <div class="actions mt-3">
-                  <button type="button" id="checkBtn" class="btn btn-outline-gold">Check Availability</button>
-                  <button type="submit" class="btn btn-gold" data-bs-toggle="modal2"
-                    data-bs-target="#reserveModal2">Reserve
-                    Now</button>
-                </div>
-
-                <div id="status" class="status"></div>
-              </div>
-            </form>
+          <div class="navigate-btn">
+            <a href="menu.html" class="btn fs-2 text-uppercase">
+              Gallery
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Confirmation Modal -->
-  <div class="modal2 fade" id="reserveModal2" aria-hidden="true" aria-labelledby="reserveLabel2" tabindex="-1">
-    <div class="modal-panel">
-      <h3>Confirm Reservation</h3>
-      <div id="confirmBody"></div>
-
-      <div class="modal-actions">
-        <button id="cancelModal" class="btn outline">Edit</button>
-        <button id="sendConfirm" class="btn primary">Confirm & Send</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Toast -->
-  <div id="toast" class="toast" hidden></div>
-
-
-<section id="reviews" class="reviews-section py-5">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-tag text-gold">Customer Reviews</h2>
-      <p class="review-sub">What our guests are saying</p>
-      <div class="underline"></div>
-    </div>
-
-    <!-- Slider Wrapper -->
-    <div class="reviews-slider">
-
-      <!-- Review 1 -->
-      <div class="review-card glass-card">
-        <div class="review-header">
-          <img src="/img/user1.jpg" alt="Profile" class="review-avatar">
-          <div>
-            <h5 class="review-name">James Okoro</h5>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </div>
-
-        <p class="review-text">
-          “Absolutely outstanding experience. The ambiance is luxury defined, and the meals are cooked with precision and passion.”
-        </p>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="review-card glass-card">
-        <div class="review-header">
-          <img src="/img/user2.jpg" alt="Profile" class="review-avatar">
-          <div>
-            <h5 class="review-name">Amara Bello</h5>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </div>
-
-        <p class="review-text">
-          “Kandos gives fine dining a new meaning. From the presentation to the taste — every plate feels like art.”
-        </p>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="review-card glass-card">
-        <div class="review-header">
-          <img src="/img/user3.jpg" alt="Profile" class="review-avatar">
-          <div>
-            <h5 class="review-name">Daniel Ayodele</h5>
-            <div class="review-stars">★★★★☆</div>
-          </div>
-        </div>
-
-        <p class="review-text">
-          “Loved the signature dishes! The steak was juicy, the service excellent, and the environment breathtaking.”
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-
-
-  <section id="contact" class="py-5">
-    <div class="container">
-
-      <!-- Title -->
-      <div class="text-center mb-5">
-        <h2 class="menu-title">Contact Us</h2>
-        <p class="section-sub">We’d love to hear from you. Reach out anytime.</p>
-        <div class="underline"></div>
-      </div>
-
-      <div class="row g-4">
-
-        <!-- LEFT: Contact Info -->
-        <div class="col-md-5">
-          <div class="p-4 contact-box">
-            <h4 class="text-gold mb-4">Get In Touch</h4>
-
-            <p class="mb-3">
-              <i class="fa-solid fa-phone text-gold me-2"></i> +234 901 645 2130
-            </p>
-            <p class="mb-3">
-              <i class="fa-solid fa-phone text-gold me-2"></i> +234 900 000 0000
-            </p>
-            <p class="mb-3">
-              <i class="fa-solid fa-envelope text-gold me-2"></i> info@kandosrestaurant.com
-            </p>
-
-            <p class="mb-3">
-              <i class="fa-solid fa-location-dot text-gold me-2"></i> 15 Adeola Odeku, Victoria Island, Lagos
-            </p>
-
-            <hr class="text-secondary">
-
-            <h5 class="text-gold mb-3">Opening Hours</h5>
-            <p class="mb-1">Mon – Fri: 9:00 AM – 10:00 PM</p>
-            <p class="mb-1">Saturday: 10:00 AM – 11:00 PM</p>
-            <p>Sunday: 12:00 PM – 9:00 PM</p>
-
-          </div>
-        </div>
-
-        <!-- RIGHT: Contact Form -->
-        <div class="col-md-7">
-          <div class="mt-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.619444935243!2d3.4178158749257036!3d6.435249824708156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1a3e322f93%3A0xfce67efe8bb5db12!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1708896307312!5m2!1sen!2sng"
-              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-        </div>
-
-      </div>
-
-
-
-    </div>
-  </section>
-
-
-
-
-<footer class="footer-section">
-  <div class="container py-5">
-
-    <div class="row g-4">
-
-      <!-- Brand / About -->
-      <div class="col-md-4">
-        <h3 class="footer-brand">KANDOS</h3>
-        <p class="footer-text">
-          A fine dining experience crafted with passion.  
-          Taste luxury, elegance, and unforgettable flavors.
-        </p>
-
-        <div class="social-links mt-3">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter "></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-2">
-        <h5 class="footer-title">Quick Links</h5>
-        <ul class="footer-list">
-          <li><a href="#menu">Our Menu</a></li>
-          <li><a href="#signature">Signature Dishes</a></li>
-          <li><a href="#reservation">Reservations</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Contact</h5>
-        <ul class="footer-list contact-list">
-          <li><i class="fa-solid fa-location-dot text-gold me-2"></i> 15 Adeola Odeku, Victoria Island, Lagos</li>
-          <li><i class="fa-solid fa-phone text-gold me-2"></i> +234 901 645 2130</li>
-          <li><i class="fa-solid fa-envelope text-gold me-2"></i> info@kandosrestaurant.com</li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Stay Updated</h5>
-        <form class="newsletter-form">
-          <input type="email" class="form-control footer-input" placeholder="Email address">
-          <button class="btn btn-gold mt-2">Subscribe</button>
-        </form>
-      </div>
-
-    </div>
-
-    <hr class="footer-line">
-
-    <p class="copyright text-center">
-      © 2025 Kandos Restaurant — All Rights Reserved.
-    </p>
-
-  </div>
-</footer>
-
-   
   <!-- Bootstrap JavaScript Libraries -->
   <script>
     document.getElementById("contact").style.transition = "all 1s";
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -697,156 +215,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-
-  <script>
-    const buttons = document.querySelectorAll("#menuTabs .nav-link");
-    const items = document.querySelectorAll(".menu-item");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-
-        // Make clicked tab active
-        buttons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        const filter = btn.getAttribute("data-filter");
-
-        // Filter items
-        items.forEach(item => {
-          if (filter === "all" || item.classList.contains(filter)) {
-            item.style.display = "block";
-            item.style.opacity = "1";
-          } else {
-            item.style.display = "none";
-          }
-        });
-      });
-    });
-  </script>
-
-  <script>
-    (function () {
-      const date = document.getElementById('resDate');
-      const time = document.getElementById('resTime');
-      const modal = document.getElementById('reserveModal2');
-      const confirmBody = document.getElementById('confirmBody');
-      const toast = document.getElementById('toast');
-      const status = document.getElementById('status');
-
-      // Set min selectable date to today
-      const today = new Date().toISOString().split("T")[0];
-      date.min = today;
-
-      // Business hours
-      const OPEN = 12;         // 12:00 PM
-      const CLOSE = 22;        // 10:00 PM
-      const INTERVAL = 30;     // minutes
-
-      // Generate available times based on date
-      function generateTimes() {
-        time.innerHTML = `<option value="">Select time</option>`;
-        const selected = new Date(date.value);
-
-        for (let h = OPEN; h <= CLOSE; h++) {
-          for (let m = 0; m < 60; m += INTERVAL) {
-            const hh = h.toString().padStart(2, '0');
-            const mm = m.toString().padStart(2, '0');
-            time.innerHTML += `<option>${hh}:${mm}</option>`;
-          }
-        }
-      }
-
-      date.addEventListener("change", generateTimes);
-
-      function validateForm() {
-        let valid = true;
-        document.querySelectorAll("#reserveForm [required]").forEach(field => {
-          const err = field.parentElement.querySelector(".error");
-          if (!field.value) {
-            err.textContent = "Required";
-            valid = false;
-          } else {
-            err.textContent = "";
-          }
-        });
-        return valid;
-      }
-
-      // Check availability (mock)
-      document.getElementById("checkBtn").addEventListener("click", () => {
-        if (!validateForm()) return;
-        status.textContent = "Checking availability...";
-        setTimeout(() => {
-          status.textContent = "Table available ✔ You can proceed.";
-        }, 600);
-      });
-
-      // Submit → open confirmation modal
-      document.getElementById("reserveForm").addEventListener("submit", e => {
-        e.preventDefault();
-        if (!validateForm()) return;
-
-        const f = new FormData(e.target);
-        const d = Object.fromEntries(f.entries());
-
-        confirmBody.innerHTML = `
-      <p><strong>Name:</strong> ${d.fName}</p>
-      <p><strong>Email:</strong> ${d.email}</p>
-      <p><strong>Phone:</strong> ${d.phone}</p>
-      <p><strong>Party Size:</strong> ${d.guests}</p>
-      <p><strong>Date:</strong> ${d.date}</p>
-      <p><strong>Time:</strong> ${d.time}</p>
-      <p><strong>Notes:</strong> ${d.notes || "—"}</p>
-    `;
-
-        modal.setAttribute("aria-hidden", "false");
-      });
-
-      // Close modal
-      document.getElementById("cancelModal")
-        .addEventListener("click", () => modal.setAttribute("aria-hidden", "true"));
-
-      // Confirm reservation
-      document.getElementById("sendConfirm").addEventListener("click", () => {
-        modal.setAttribute("aria-hidden", "true");
-        showToast("Reservation confirmed! A confirmation email will be sent.");
-      });
-
-      // Toast helper
-      function showToast(msg) {
-        toast.textContent = msg;
-        toast.hidden = false;
-        setTimeout(() => toast.hidden = true, 4500);
-      }
-    })();
-  </script>
-
-<script>
-let slideIndex = 0;
-const slides = document.querySelectorAll(".signature-slide");
-
-function showSlide(n) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[n].classList.add("active");
-}
-
-document.querySelector(".next").addEventListener("click", () => {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  showSlide(slideIndex);
-});
-
-// Auto-slide (optional)
-setInterval(() => {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
-}, 5000);
-
-</script>
+  <script src="js.js" defer></script>
 
 
 </body>
