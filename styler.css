@@ -39,24 +39,18 @@ body {
   /* gold accent */
 }
 
-/* Hero Section */
-.hero-header {
-  background: url('/img/hero2.jpg') center/cover no-repeat;
-  height: 100vh;
-  position: relative;
-}
-
-.hero-section {
-  height: 100vh;
-}
-
-/* Modal */
+/* Hero Modal */
 .modal-content {
   background: #0e0e0e;
   border-radius: 12px;
   overflow: hidden;
 }
 
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
 
 /* Headings */
 h1,
