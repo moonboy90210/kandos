@@ -39,24 +39,14 @@ body {
   /* gold accent */
 }
 
-/* Hero Section */
-
-.hero-section {
-
-
-}
-
-/* Modal */
+/* Hero Modal */
 .modal-content {
   background: #0e0e0e;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.carousel-item {
-  /* height: 100vh; */
 
-}
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
