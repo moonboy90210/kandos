@@ -54,11 +54,17 @@ body {
 .carousel-caption {
   bottom: 35%;
 }
+.carousel-title { 
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(1.7rem, 3vw + 1.1rem, 3.5rem);
+}
+
 /* Headings */
 h1,
 h2,
 h3,
-h4 .hero-title,
+h4
 .section-title,
 .navbar-brand {
   font-family: 'Cormorant Garamond', serif;
@@ -233,7 +239,6 @@ textarea {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
-  z-index: 2;
 }
 
 /* Fade Slide Animation */
